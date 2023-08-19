@@ -1,15 +1,17 @@
 .landing__pg {
   background: url("../../assets/space.jpeg");
+  width: 100%;
 }
 
 .landing_pg__cont {
+  /* background: url("../../assets/space.jpeg"); */
   width: 90.4%;
+  height: 100vh;
   display: flex;
   gap: 73px;
   margin: 0px auto;
-  /* padding: 0px 0px; */
   align-items: center;
-  padding: 500px 0px;
+  padding: 265px 0px;
 }
 
 .landing_pg__img {
@@ -19,7 +21,6 @@
   width: 509px;
   height: 494px;
   flex-shrink: 0;
-  /* padding-left: 100px; */
 }
 
 .landing_pg__text {
@@ -72,6 +73,21 @@ ul {
   gap: 16px;
   list-style-type: none;
 }
+ul .sign_up__btn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+ul .contact__btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
 .sign_up__btn {
   display: flex;
   padding: 8px 16px;
@@ -80,10 +96,6 @@ ul {
   border-radius: 32px;
   background: #fff;
   cursor: pointer;
-  color: #000;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
 }
 .contact__btn {
   display: flex;
@@ -95,8 +107,4 @@ ul {
   border-radius: 32px;
   background: #7615ba;
   cursor: pointer;
-  color: #fff;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
 }
