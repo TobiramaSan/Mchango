@@ -1,0 +1,123 @@
+.sign {
+  width: 100%;
+  background: url("../../assets/space.jpeg");
+}
+
+.sign_up__cont {
+  width: 90.4%;
+  height: max-content;
+  display: flex;
+  gap: 73px;
+  margin: 0px auto;
+  align-items: center;
+  padding: 265px 0px;
+  justify-content: center;
+}
+
+.sign_up__img {
+  background: url("../../assets/eth_gif.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 509px;
+  height: 494px;
+  flex-shrink: 0;
+}
+
+.sign_up__form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.sign_up__form span {
+  color: #7615ba;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sign_up__form h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+.form-group label {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: 0.4px;
+}
+.form-group input {
+  display: flex;
+  width: 506px;
+  padding: 23px 34px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  background: transparent;
+}
+
+.form-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.form-img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  padding: 40px 8px;
+}
+
+.form-img div p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 163.418%;
+}
+
+span.sign_up {
+  display: flex;
+  padding: 26px 108px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 31px;
+  background: #7012b1;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 43.2px */
+}
