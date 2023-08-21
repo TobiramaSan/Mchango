@@ -108,16 +108,16 @@ form {
 
 span.sign_up {
   display: flex;
+  height: 69px;
   padding: 26px 108px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 31px;
+  border-radius: 20px;
   background: #7012b1;
   color: #fff;
-  font-family: Poppins;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 43.2px */
+  line-height: 120%;
 }
