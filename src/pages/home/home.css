@@ -2,3 +2,10 @@
   background: #1f1f22;
   height: 100vh;
 }
+.navbar {
+  position: fixed;
+  width: 19%;
+}
+.home_content {
+  margin-left: 19%;
+}

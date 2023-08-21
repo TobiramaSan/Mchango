@@ -1,6 +1,5 @@
 .side_bar {
   position: fixed;
-  width: 19%;
   height: 1024px;
   display: flex;
   padding: 24px 24px 32px 24px;

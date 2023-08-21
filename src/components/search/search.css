@@ -3,12 +3,12 @@
   /* width: 72%; */
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 171px;
-  padding-top: 23px;
+  padding: 23px 71px 23px 0px;
 }
 .search_input {
-  width: 59%;
+  width: 45%;
 }
 input {
   width: 100%;

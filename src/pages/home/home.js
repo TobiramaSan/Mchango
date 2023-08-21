@@ -1,3 +1,4 @@
+import Balance from "../../components/balance/balance";
 import Search from "../../components/search/search";
 import SideBar from "../../components/sidebar/sidebar";
 import "./home.css";
@@ -9,9 +10,12 @@ const Home = () => {
   //   };
   return (
     <div className="home">
-      <div className="home_cont">
+      <div className="navbar">
         <SideBar />
+      </div>
+      <div className="home_content">
         <Search />
+        <Balance />
         {/* <div>
           <p>Balance:{userData.balance}</p>
           <p>Income:{userData.income}</p>
