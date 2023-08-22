@@ -1,0 +1,79 @@
+.balance {
+  width: 368px;
+  border-radius: 20px;
+  background: #2a2a2d;
+}
+.balance_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 17px;
+  padding-top: 20px;
+  padding-left: 30px;
+  /* position: absolute; */
+  left: 8px;
+  bottom: 10px;
+}
+.balance_main {
+  display: flex;
+  align-items: flex-start;
+  gap: 81px;
+}
+
+.balance_output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.rate span {
+  color: #2fa15d;
+  text-shadow: 0px 0px 4.139999866485596px #286c39,
+    0px 0px 8.279999732971191px #286c39, 0px 0px 28.979999542236328px #286c39,
+    0px 0px 57.959999084472656px #286c39, 0px 0px 99.36000061035156px #286c39,
+    0px 0px 173.8800048828125px #286c39;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.income_expense {
+  display: flex;
+  align-items: flex-end;
+  gap: 17px;
+}
+
+.income {
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.expense {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.balance_output p,
+.income p,
+.expense p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.income div,
+.expense div {
+  width: 100%;
+}

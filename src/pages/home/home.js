@@ -1,6 +1,8 @@
 import Balance from "../../components/balance/balance";
 import Search from "../../components/search/search";
 import SideBar from "../../components/sidebar/sidebar";
+import Table from "../../components/table/table";
+import Table2 from "../../components/table2/table2";
 import "./home.css";
 const Home = () => {
   //   const userData = {
@@ -16,6 +18,8 @@ const Home = () => {
       <div className="home_content">
         <Search />
         <Balance />
+        <Table />
+        <Table2 />
         {/* <div>
           <p>Balance:{userData.balance}</p>
           <p>Income:{userData.income}</p>

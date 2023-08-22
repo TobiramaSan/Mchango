@@ -1,0 +1,104 @@
+.create-form {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  width: 60%;
+}
+
+.arrow-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.arrow-text p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 17.767px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26.65px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;
+  width: 70%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  width: 90%;
+}
+
+.form-group label {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.form-group input {
+  display: flex;
+  width: 100%;
+  padding: 23px 34px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  background: transparent;
+}
+
+.form-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.form-img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  padding: 40px 8px;
+}
+
+.form-img div p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 163.418%;
+}
+
+button.sign_up {
+  display: flex;
+  padding: 8.883px 39.975px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.104px;
+  border-radius: 13.325px;
+  background: #7615ba;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0px auto;
+}

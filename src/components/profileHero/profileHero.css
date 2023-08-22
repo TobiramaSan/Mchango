@@ -1,0 +1,151 @@
+.profile-hero {
+  width: 80%;
+}
+
+.profile-hero-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.arrow-cont {
+  width: 31px;
+  height: 29px;
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 185px;
+  height: 176px;
+  flex-shrink: 0;
+  margin: 0px auto;
+}
+
+.text-cont {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.title-cont {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.title-cont h1 {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.title-cont div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-direction: row;
+}
+
+.title-cont div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+}
+
+.title-cont div ul li p {
+  color: #fff;
+  font-family: poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.links-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+ul.links {
+  display: flex;
+  width: 458px;
+  height: 22px;
+  align-items: center;
+  gap: 41px;
+  flex-direction: row;
+}
+
+ul.links li {
+  color: #979797;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.main-content h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.main-content p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.inner-list {
+  padding-top: 20px;
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile-hero-cont button {
+  width: 40%;
+  display: flex;
+  padding: 8.883px 39.975px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.104px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  border-radius: 13.325px;
+  background: #7615ba;
+  margin: 0px auto;
+}

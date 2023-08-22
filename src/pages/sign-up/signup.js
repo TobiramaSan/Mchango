@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "../../assets/Group 29.png";
 import "./signup.css";
+import { useNavigate } from "react-router-dom";
 const SignUp = () => {
   // const formArray = [
   //   {
@@ -28,6 +29,7 @@ const SignUp = () => {
   //     placeholder: "Name",
   //   },
   // ];
+  const navigate = useNavigate();
   return (
     <div className="sign">
       <div className="sign_up__cont">
@@ -78,7 +80,14 @@ const SignUp = () => {
               </div>
             </div>
           </form>
-          <span className="sign_up">Sign Up</span>
+          <span
+            onClick={() => {
+              navigate("/home");
+            }}
+            className="sign_up"
+          >
+            Sign Up
+          </span>
         </div>
       </div>
     </div>
