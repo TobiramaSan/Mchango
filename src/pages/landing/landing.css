@@ -33,22 +33,22 @@
 span.bg {
   color: #7615ba;
   font-family: Poppins;
-  font-size: 64px;
+  font-size: 94px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 h2 {
   color: #fff;
-  font-family: DM Sans;
+  font-family: Poppins;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 p {
-  color: #fff;
-  font-family: DM Sans;
+  color: #6e87a0;
+  font-family: Poppins;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -60,22 +60,23 @@ span.sm {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: DM Sans;
+  font-family: Poppins;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
 }
 
-ul {
+.landing__pg .landing_pg__cont ul {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   list-style-type: none;
+  flex-direction: row;
 }
 ul .sign_up__btn a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -94,8 +95,9 @@ ul .contact__btn a {
   align-items: flex-start;
   gap: 16px;
   border-radius: 32px;
-  background: #fff;
+  background: transparent;
   cursor: pointer;
+  border: 1px solid #fff;
 }
 .contact__btn {
   display: flex;

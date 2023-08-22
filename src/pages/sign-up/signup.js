@@ -82,7 +82,7 @@ const SignUp = () => {
           </form>
           <span
             onClick={() => {
-              navigate("/home");
+              navigate("/connect-wallet");
             }}
             className="sign_up"
           >

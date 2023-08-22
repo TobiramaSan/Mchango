@@ -7,10 +7,16 @@ import Home from "./pages/home/home";
 import CreateGroup from "./pages/create/create";
 import Profile from "./pages/profile/profile";
 import Success from "./components/success/success";
+import Group from "./pages/Group/group";
+import Chats from "./pages/chats/chats";
+import ConnectWallet from "./components/connectWallet/connectWallet";
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/chats" element={<Chats />} />
+        <Route path="/connect-wallet" element={<ConnectWallet />} />
+        <Route path="/group" element={<Group />} />
         <Route path="/success" element={<Success />} />
         <Route path="/create-group" element={<CreateGroup />} />
         <Route path="/home" element={<Home />} />

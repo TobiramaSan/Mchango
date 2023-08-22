@@ -19,7 +19,7 @@ const Landing = () => {
               smart contracts.
               <br /> <br />
               <span className="sm">
-                Begin contributing, saving, and growing.
+                Initiate saving, active participation, and fostering growth.
               </span>
             </p>
           </div>

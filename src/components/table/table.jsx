@@ -1,19 +1,22 @@
-import React from "react";
+// import React, { useState } from "react";
 import "./table.css";
 import Grouppic from "../../assets/GroupPic.png";
 import Eth from "../../assets/Eth.png";
 const Table = () => {
+  // const [showCreate, setShowCreate] = useState(false);
   return (
     <div className="table">
       <div className="table-cont">
         <div className="top-active">
-          <div>
+          <div className="top-num">
             <p>Top Groups</p>
           </div>
           <div className="active-num">
             <p>Active Groups</p>
             <span className="num">5</span>
           </div>
+
+          <button className="Button">Create New Group</button>
         </div>
         <div className="long-line"></div>
 

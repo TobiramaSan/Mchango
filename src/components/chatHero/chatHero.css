@@ -1,0 +1,158 @@
+.chat-hero {
+  width: 150%;
+}
+
+.chat-hero-cont {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.group-chats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 47px;
+}
+
+.group-personal {
+  display: flex;
+  padding: 15.5px 20px 16.5px 24px;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.group-personal h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 133.333% */
+}
+
+.group-personalh1:hover {
+  color: #7615ba;
+  transition: 1s;
+}
+.group-cubes {
+  display: flex;
+  width: 373px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.cube {
+  display: flex;
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.inner-cube {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.group-title {
+  width: 170px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.detail1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.detail2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.line-chat {
+  width: 1px;
+  height: 828.01px;
+  background: #fff;
+}
+
+.main-group-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+  width: 45%;
+}
+
+.group-head {
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.name-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.add-details {
+  display: flex;
+  width: 187px;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-date {
+  display: flex;
+  width: 100%;
+  padding: 24px 0px 2px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 27px;
+}
+
+.main-inner-text {
+  display: flex;
+  align-items: flex-start;
+}
+.message {
+  display: flex;
+  padding-left: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.message-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.message-content {
+  width: 564.981px;
+}
