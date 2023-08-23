@@ -1,0 +1,204 @@
+.overview-details {
+  width: 80%;
+}
+
+.overview-details-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.arrow-cont {
+  width: 31px;
+  height: 29px;
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 185px;
+  height: 176px;
+  flex-shrink: 0;
+  margin: 0px auto;
+}
+
+.about-details {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.title-cont {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.title-cont h1 {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
+.title-cont div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-direction: row;
+}
+
+.title-cont div ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: row;
+}
+
+.title-cont div ul li p {
+  color: #fff;
+  font-family: poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.main-content h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.main-content p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.plan-pay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.plan h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+.plan div h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px; /* 157.143% */
+}
+
+.pay h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+.pay div h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px; /* 157.143% */
+}
+
+.pay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pay div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.group-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 33px;
+  width: 50%;
+}
+
+.group-button h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.two-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  width: 100%;
+}
+.two-btns button {
+  display: flex;
+  width: 202px;
+  height: 31px;
+  padding: 13.325px 22.208px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.104px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26.65px; /* 190.356% */
+  border-radius: 5px;
+  background: #ab67da;
+  width: 220px;
+}

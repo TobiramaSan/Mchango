@@ -10,19 +10,27 @@ import Success from "./components/success/success";
 import Group from "./pages/Group/group";
 import Chats from "./pages/chats/chats";
 import ConnectWallet from "./components/connectWallet/connectWallet";
+import GroupDetails from "./pages/groupinfo/groupDetails";
+import Notification from "./pages/notification/notification";
+import SuccessAdmin from "./components/popupAdmin/successAdmin";
+import FailedAdmin from "./components/popupAdmin/failedAdmin";
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/group-details" element={<GroupDetails />} />
         <Route path="/chats" element={<Chats />} />
         <Route path="/connect-wallet" element={<ConnectWallet />} />
+        <Route path="/failed-add" element={<FailedAdmin />} />
         <Route path="/group" element={<Group />} />
         <Route path="/success" element={<Success />} />
         <Route path="/create-group" element={<CreateGroup />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Landing />} />
+        <Route path="/notifications" element={<Notification />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/success-added" element={<SuccessAdmin />} />
       </Routes>
     </div>
   );

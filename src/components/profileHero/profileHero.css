@@ -59,6 +59,7 @@
   align-items: center;
   gap: 4px;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .title-cont div ul li p {
@@ -96,6 +97,12 @@ ul.links li {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.1px;
+  cursor: pointer;
+}
+
+ul.links li:hover {
+  color: #7615ba;
+  transition: 1s;
 }
 
 .main-content {
@@ -148,4 +155,212 @@ ul.links li {
   border-radius: 13.325px;
   background: #7615ba;
   margin: 0px auto;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.payment h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+.payment-cont {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 48px 0px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 565px;
+  padding: 20px;
+}
+
+.payment-main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  /* width: 100%; */
+  justify-content: flex-start;
+}
+
+.payment-main .div-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.payment-main .div-1 h1 {
+  color: #323236;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.payment-main .div-1 span {
+  color: #83848b;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.payment-main .div-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 250px;
+}
+
+.payment-main .div-2 h1 {
+  color: #23b371;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.payment-main .div-2 span {
+  color: #83848b;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.chatroom {
+  width: 666px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #0d0d0d;
+}
+
+.chatroom-cont {
+  width: 95%;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+.main-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 290px;
+}
+
+.title-name-pic {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.title-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-name h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.title-name h2 {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.line {
+  height: 1px;
+  background: #fff;
+  width: 100%;
+}
+
+.chat-board {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.chat-board-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.chat-board-main h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.chat-board-main span {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.inner-chat {
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px 8px 8px 0px;
+  background: var(--white-input, #f6fbff);
+}
+
+.inner-chat h1 {
+  color: var(--grey-100, #213241);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
