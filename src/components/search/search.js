@@ -2,7 +2,9 @@ import React from "react";
 import Notify from "../../assets/Notification.png";
 import Star from "../../assets/Star 15.png";
 import "./search.css";
+import { useNavigate } from "react-router-dom";
 const Search = () => {
+  const navigation = useNavigate();
   return (
     <div className="search">
       <div className="search_input">
@@ -10,7 +12,13 @@ const Search = () => {
       </div>
       <div className="notify_profile">
         <div className="notify">
-          <img src={Notify} alt="" />
+          <img
+            onClick={() => {
+              navigation("/notifications");
+            }}
+            src={Notify}
+            alt=""
+          />
         </div>
         <div className="profile">
           <img src={Star} alt="" />

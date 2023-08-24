@@ -3,24 +3,24 @@ import "./createForm.css";
 import Img from "../../assets/Group 29.png";
 import Arrowback from "../../assets/arrow-back.png";
 // import { useNavigate } from "react-router-dom";
-import ReactModal from "react-modal";
-import Success from "../success/success";
-import { useState } from "react";
+// import ReactModal from "react-modal";
+// import Success from "../success/success";
+// import { useState } from "react";
 const CreateForm = () => {
   // const navigate = useNavigate();
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const [showSuccess, setShowSuccess] = useState(false);
+  // const [showSuccess, setShowSuccess] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
-    setShowSuccess(true);
-  };
-  const closeModal = () => {
-    setIsOpen(false);
-    setShowSuccess(false);
-  };
+  // const openModal = () => {
+  //   setIsOpen(true);
+  //   setShowSuccess(true);
+  // };
+  // const closeModal = () => {
+  //   setIsOpen(false);
+  //   setShowSuccess(false);
+  // };
   return (
     <div className="create-form">
       <div className="arrow-text">
@@ -70,17 +70,15 @@ const CreateForm = () => {
             <p>Upload a valid means of identification</p>
           </div>
         </div>
-        <button onClick={openModal} className="sign_up">
-          Create Group
-        </button>
+        <button className="sign_up">Create Group</button>
       </form>
-      <ReactModal
+      {/* <ReactModal
         isOpen={isOpen}
         contentLabel="Success"
         onRequestClose={closeModal}
       >
         {showSuccess && <Success />}
-      </ReactModal>
+      </ReactModal> */}
     </div>
   );
 };

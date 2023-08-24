@@ -14,6 +14,7 @@ import GroupDetails from "./pages/groupinfo/groupDetails";
 import Notification from "./pages/notification/notification";
 import SuccessAdmin from "./components/popupAdmin/successAdmin";
 import FailedAdmin from "./components/popupAdmin/failedAdmin";
+import Upgrade from "./pages/upgrade/upgrade";
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/success-added" element={<SuccessAdmin />} />
+        <Route path="/upgrade" element={<Upgrade />} />
       </Routes>
     </div>
   );

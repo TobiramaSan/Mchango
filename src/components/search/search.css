@@ -37,6 +37,7 @@
   flex-shrink: 0;
   border-radius: 31px;
   border: 1px solid #7b16be;
+  cursor: pointer;
 }
 .profile {
   display: flex;
@@ -49,6 +50,7 @@
   border-radius: 31px;
   border: 2px solid #801ec0;
   box-shadow: 0px 18px 54px 0px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
 }
 
 .profile h3 {
