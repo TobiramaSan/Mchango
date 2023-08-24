@@ -30,14 +30,15 @@
   align-items: flex-start;
   gap: 34px;
 }
-span.bg {
-  color: #7615ba;
-  font-family: Poppins;
-  font-size: 94px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+
+.bg {
+  width: 60%;
 }
+
+.bg img {
+  width: 100%;
+}
+
 h2 {
   color: #fff;
   font-family: Poppins;
