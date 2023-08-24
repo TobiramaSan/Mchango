@@ -1,6 +1,6 @@
 .side_bar {
   position: fixed;
-  height: 1024px;
+  height: 95%;
   display: flex;
   padding: 24px 24px 32px 24px;
   flex-direction: column;
@@ -56,4 +56,13 @@ ul li span:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 28px */
+}
+
+.log_out:hover {
+  cursor: pointer;
+}
+
+.log_out span:hover {
+  color: #7615ba;
+  transition: 1s;
 }

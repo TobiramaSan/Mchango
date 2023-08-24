@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/mchango logo 1.png";
 import Home from "../../assets/Home_Home.png";
 import Groups from "../../assets/Home_Group.png";
 import Chat from "../../assets/Home_Chat.png";
@@ -14,7 +14,7 @@ const SideBar = () => {
       <div className="side_bar__wrapper">
         <div className="logo_name">
           <img src={Logo} alt="" />
-          <h1>Mchango_</h1>
+          {/* <h1>Mchango_</h1> */}
         </div>
         <ul>
           <li>
@@ -50,7 +50,7 @@ const SideBar = () => {
         </ul>
       </div>
       <div className="log_out">
-        <NavLink>
+        <NavLink to="/">
           <img src={Logout} alt="" />
           <span>Logout</span>
         </NavLink>

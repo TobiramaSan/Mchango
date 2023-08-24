@@ -2,12 +2,12 @@ import React from "react";
 import "./createForm.css";
 import Img from "../../assets/Group 29.png";
 import Arrowback from "../../assets/arrow-back.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import ReactModal from "react-modal";
 // import Success from "../success/success";
 // import { useState } from "react";
 const CreateForm = () => {
-  // const navigate = useNavigate();
+  const navigation = useNavigate();
 
   // const [isOpen, setIsOpen] = useState(false);
 
@@ -24,7 +24,13 @@ const CreateForm = () => {
   return (
     <div className="create-form">
       <div className="arrow-text">
-        <img src={Arrowback} alt="" />
+        <img
+          onClick={() => {
+            navigation("/group");
+          }}
+          src={Arrowback}
+          alt=""
+        />
         <p>To create a new thrift group, kindly fill out these details. </p>
       </div>
       <form action="">
