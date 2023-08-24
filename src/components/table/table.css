@@ -13,6 +13,7 @@
 .top-active {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .top-active div {
@@ -20,6 +21,7 @@
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
+  /* width: 100%; */
 }
 .top-active div.active-num {
   display: flex;
@@ -28,12 +30,14 @@
   gap: 10px;
   flex-shrink: 0;
 }
-
+.top-active p {
+  cursor: pointer;
+}
 .top-active p:hover {
   color: #7615ba;
   transition: 1s;
 }
-button.Button {
+.top-active button.Button {
   display: none;
   /* width: 177px; */
   /* height: 33px; */
@@ -50,7 +54,7 @@ button.Button {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  margin-left: 490px;
+  margin-left: 550px;
 }
 
 .long-line {
@@ -94,16 +98,21 @@ li div .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 39px;
+  gap: 37px;
 }
 
 li div .name {
-  gap: 30px;
+  gap: 32px;
 }
 .name-pic {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.name-pic img {
+  width: 25px;
+  height: 27px;
 }
 
 .ether {
@@ -131,4 +140,103 @@ li div .name {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.15px;
+}
+
+.active-group .table2-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.active-group .transact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.active-group .main-transact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.active-group ul.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.active-group .text-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.active-group .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+}
+
+.active-group .image {
+  background: url("../../assets/Oops.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 870px;
+  height: 650px;
+  margin: 0px auto;
+}
+
+ul.list li {
+  color: #7c16bf;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+
+.main-transact p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.main-transact span {
+  color: #a9accc;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

@@ -1,0 +1,354 @@
+.main-profile {
+  width: 100%;
+}
+
+.main-profile-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 31px;
+  width: 100%;
+}
+
+.main-profile-cont ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 53px;
+}
+
+.main-profile-cont ul li {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.main-profile-cont ul li:hover {
+  color: #7615ba;
+  transition: 1s;
+}
+
+.profile-information {
+  width: 400px;
+}
+
+.profile-info-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 212px;
+  gap: 10px;
+}
+
+.photo p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+.img-div {
+  width: 114px;
+  height: 114px;
+  background-image: url("../../assets/Camera.png"); /* Replace 'your-image.jpg' with your image URL */
+  background-size: 39px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%; /* Makes the square appear as a circle */
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+
+form.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.form-div label {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.form-div input {
+  display: flex;
+  width: 352px;
+  padding: 23px 34px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid #f0f0f0;
+  background: transparent;
+}
+
+.form-div::placeholder {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.1px;
+}
+
+.profile-info-cont button {
+  display: flex;
+  padding: 8.883px 39.975px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.104px;
+  border-radius: 13.325px;
+  background: #7615ba;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.activity {
+  margin-top: 40px;
+  width: 100%;
+  height: 132px;
+}
+.activity-cont {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  gap: 77px;
+}
+
+.single-cont {
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  background: #6552fe;
+  padding: 20px;
+}
+
+.security {
+  width: 100%;
+}
+
+.security-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 31px;
+}
+
+.mail-pass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.mail {
+  display: flex;
+  width: 506px;
+  padding: 8px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.mail p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.mail span {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.pass {
+  display: flex;
+  width: 506px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.pass p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.pass button {
+  display: flex;
+  width: 152px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #7615ba;
+  cursor: pointer;
+}
+
+.auth-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.auth {
+  display: flex;
+  width: 506px;
+  padding: 8px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.auth p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.phone {
+  display: flex;
+  width: 506px;
+  padding: 8px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.phone p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.phone span {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

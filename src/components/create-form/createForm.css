@@ -59,6 +59,18 @@ form {
   background: transparent;
 }
 
+.form-group select,
+.form-group select {
+  display: flex;
+  width: 100%;
+  padding: 23px 34px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  background: transparent;
+}
+
 .form-img {
   display: flex;
   flex-direction: column;

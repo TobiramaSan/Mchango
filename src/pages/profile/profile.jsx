@@ -2,7 +2,8 @@ import React from "react";
 import "./profile.css";
 import SideBar from "../../components/sidebar/sidebar";
 import Search from "../../components/search/search";
-import ProfileHero from "../../components/profileHero/profileHero";
+// import ProfileHero from "../../components/profileHero/profileHero";
+import MainProfile from "../../components/mainprofile/mainProfile";
 
 const Profile = () => {
   return (
@@ -12,7 +13,8 @@ const Profile = () => {
       </div>
       <div className="profile-content">
         <Search />
-        <ProfileHero />
+        {/* <ProfileHero /> */}
+        <MainProfile />
       </div>
     </div>
   );
