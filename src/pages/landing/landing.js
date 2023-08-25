@@ -3,6 +3,7 @@ import { checkAndAddSepoliaNetwork } from '../../utils/AddSepolia';
 // import { NavLink } from "react-router-dom";
 import './landing.css';
 import arrow from '../../assets/arrow_right_alt.png';
+import logo from '../../assets/mchango logo 1.png';
 
 const Landing = () => {
   const [isConnected, setIsConnected] = useState(false);
