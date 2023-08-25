@@ -14,6 +14,14 @@
   justify-content: center;
 }
 
+.bg {
+  width: 70%;
+}
+
+.bg img {
+  width: 100%;
+}
+
 .sign_up__img {
   background: url("../../assets/eth_gif.gif");
   background-repeat: no-repeat;
@@ -52,14 +60,19 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 39px;
-  width: 150%;
+  width: 100%;
 }
 
-.form-group {
+input {
+  color: #fff;
+}
+
+.sign_up__form .form-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 17px;
+  width: 90%;
 }
 .form-group label {
   color: #fff;

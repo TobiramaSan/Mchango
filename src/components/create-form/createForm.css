@@ -53,6 +53,7 @@ form {
 }
 
 .form-group input {
+  color: white;
   display: flex;
   width: 100%;
   padding: 23px 34px;

@@ -58,7 +58,9 @@ const Landing = () => {
         <div className="landing_pg__img"></div>
         <div className="landing_pg__text">
           <div className="main__text">
-            <span className="bg">Mchango_</span>
+            <div className="bg">
+              <img src={logo} alt="" />
+            </div>
             <h2>Gateway to Smart Savings and Contributions</h2>
             <p>
               Join a host of forward-thinking group and start on a path of
