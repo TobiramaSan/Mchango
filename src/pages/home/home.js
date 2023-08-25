@@ -5,6 +5,9 @@ import Table from "../../components/table/table";
 import Table2 from "../../components/table2/table2";
 import "./home.css";
 const Home = () => {
+  const accounts = window.localStorage.getItem("accounts");
+  const newAccount = JSON.parse(accounts);
+  console.log(newAccount);
   //   const userData = {
   //     balance: "50000",
   //     income: "25000",
