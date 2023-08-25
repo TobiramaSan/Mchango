@@ -1,36 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Img from "../../assets/Group 29.png";
 import "./signup.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/mchango logo 1.png";
+
 const SignUp = () => {
-  // const formArray = [
-  //   {
-  //     for: "name",
-  //     type: "text",
-  //     id: "name",
-  //     placeholder: "Name",
-  //   },
-  //   {
-  //     for: "email",
-  //     type: "email",
-  //     id: "name",
-  //     placeholder: "Name",
-  //   },
-  //   {
-  //     for: "message",
-  //     type: "text",
-  //     id: "message",
-  //     placeholder: "Name",
-  //   },
-  //   {
-  //     for: "name",
-  //     type: "text",
-  //     id: "name",
-  //     placeholder: "Name",
-  //   },
-  // ];
   const navigate = useNavigate();
+
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [country, setCountry] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [bvnNumber, setBvnNumber] = useState("");
+
   return (
     <div className="sign">
       <div className="sign_up__cont">
@@ -43,39 +26,68 @@ const SignUp = () => {
           <h1>Sign Up</h1>
           <form action="">
             <div className="form-group">
-              <label for="name">Fullname:</label>
-              <input type="text" id="name" name="name" placeholder="Name" />
+              <label htmlFor="name">Fullname:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
+              />
             </div>
 
             <div className="form-group">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="example@gmail.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
             <div className="form-group">
-              <label for="username">Username</label>
+              <label htmlFor="username">Username</label>
               <input
                 id="username"
                 name="username"
                 placeholder="Username"
-              ></input>
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
             </div>
             <div className="form-group">
-              <label for="country">Country</label>
-              <input id="country" name="country" placeholder="Country" />
+              <label htmlFor="country">Country</label>
+              <input
+                id="country"
+                name="country"
+                placeholder="Country"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+              />
             </div>
             <div className="form-group">
-              <label for="phone">Phone Number</label>
-              <input id="phone" name="phone" placeholder="Phone Number"></input>
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+              />
             </div>
             <div className="form-group">
-              <label for="bvn">BVN Number</label>
-              <input id="bvn" name="bvn" placeholder="BVN Number"></input>
+              <label htmlFor="bvn">BVN Number</label>
+              <input
+                id="bvn"
+                name="bvn"
+                placeholder="BVN Number"
+                value={bvnNumber}
+                onChange={(e) => setBvnNumber(e.target.value)}
+              />
             </div>
             <div className="form-img">
               <div>
@@ -86,6 +98,13 @@ const SignUp = () => {
           </form>
           <span
             onClick={() => {
+              console.log("Fullname:", fullname);
+              console.log("Email:", email);
+              console.log("Username:", username);
+              console.log("Country:", country);
+              console.log("Phone Number:", phoneNumber);
+              console.log("BVN Number:", bvnNumber);
+
               navigate("/connect-wallet");
             }}
             className="sign_up"

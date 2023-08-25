@@ -10,7 +10,8 @@ const Landing = () => {
   const navigate = useNavigate();
   const [isConnected, setIsConnected] = useState(false);
   const { account, setAccount } = useAccount(); // Use the custom hook to access account
-
+  const userAdd = account[0];
+  console.log(userAdd);
   const connectWallet = async (event) => {
     event.preventDefault();
 
