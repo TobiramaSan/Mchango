@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { checkAndAddSepoliaNetwork } from '../../utils/AddSepolia';
-// import { NavLink } from "react-router-dom";
 import './landing.css';
 import arrow from '../../assets/arrow_right_alt.png';
 import logo from '../../assets/mchango logo 1.png';
@@ -8,19 +7,23 @@ import logo from '../../assets/mchango logo 1.png';
 const Landing = () => {
   const [isConnected, setIsConnected] = useState(false);
   const [account, setAccount] = useState('');
+
   const connectWallet = async (event) => {
     event.preventDefault();
-    try {
-      const accounts = await window.ethereum.request({
-        method: 'eth_requestAccounts',
-      });
 
-      if (accounts.length > 0) {
-        setAccount(accounts[0]);
-        setIsConnected(true);
-        console.log(`Selected Account: ${accounts[0]}`);
+    try {
+      if (isConnected) {
+        disconnectWallet();
       } else {
-        setIsConnected(false); // Set isConnected to false if no accounts are returned
+        const accounts = await window.ethereum.request({
+          method: 'eth_requestAccounts',
+        });
+
+        if (accounts.length > 0) {
+          setAccount(accounts[0]);
+          setIsConnected(true);
+          console.log(`Selected Account: ${accounts[0]}`);
+        }
       }
     } catch (error) {
       setIsConnected(false);
@@ -43,15 +46,6 @@ const Landing = () => {
       console.log('Wallet disconnected');
     }
   }, [isConnected]);
-
-  const renderWalletAddress = () => {
-    if (isConnected && typeof account === 'string') {
-      const firstSixDigits = account.substring(0, 6);
-      const lastSixDigits = account.substring(account.length - 6);
-      return <span>{`${firstSixDigits}...${lastSixDigits}`}</span>;
-    }
-    return null;
-  };
 
   return (
     <div className="landing__pg">
@@ -79,10 +73,17 @@ const Landing = () => {
             <li className="sign_up__btn">
               <a href="/signup">Sign Up</a>
             </li>
-            <li className="contact__btn">
-              <a href="/" onClick={(event) => connectWallet(event)}>
-                {isConnected ? renderWalletAddress() : 'Connect Wallet'}
-              </a>
+            <li className="contact__btn" style={{ backgroundColor: '#7615ba' }}>
+              <button onClick={connectWallet}>
+                {isConnected ? (
+                  <>
+                    {account.substring(0, 6)}...
+                    {account.substring(account.length - 6)}
+                  </>
+                ) : (
+                  'Connect Wallet'
+                )}
+              </button>
               <img src={arrow} alt="" />
             </li>
           </ul>
