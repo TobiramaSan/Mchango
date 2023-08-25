@@ -2,6 +2,7 @@ import React from "react";
 import Img from "../../assets/Group 29.png";
 import "./signup.css";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/mchango logo 1.png";
 const SignUp = () => {
   // const formArray = [
   //   {
@@ -35,7 +36,10 @@ const SignUp = () => {
       <div className="sign_up__cont">
         <div className="sign_up__img"></div>
         <div action="" className="sign_up__form">
-          <span>Mchango_</span>
+          <div className="bg">
+            {" "}
+            <img src={logo} alt="" />
+          </div>
           <h1>Sign Up</h1>
           <form action="">
             <div className="form-group">
