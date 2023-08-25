@@ -1,5 +1,5 @@
 .landing__pg {
-  background: url('../../assets/space.jpeg');
+  background: url("../../assets/space.jpeg");
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .landing_pg__img {
-  background: url('../../assets/eth_gif.gif');
+  background: url("../../assets/eth_gif.gif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 509px;
@@ -83,7 +83,7 @@ ul .sign_up__btn a {
   font-weight: 400;
 }
 
-ul .contact__btn a {
+ul .contact__btn span {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -110,6 +110,9 @@ ul .contact__btn a {
   border-radius: 32px;
   background: #7615ba;
   cursor: pointer;
+}
+button {
+  background: #7615ba;
 }
 .wallet_address {
   margin-left: 5px;

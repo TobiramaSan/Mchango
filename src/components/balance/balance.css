@@ -3,6 +3,7 @@
   border-radius: 20px;
   background: #2a2a2d;
 }
+
 .balance_cont {
   display: flex;
   flex-direction: column;
@@ -14,11 +15,14 @@
   /* position: absolute; */
   left: 8px;
   bottom: 10px;
+  width: 50%;
 }
+
 .balance_main {
   display: flex;
   align-items: flex-start;
   gap: 81px;
+  flex-direction: column;
 }
 
 .balance_output {

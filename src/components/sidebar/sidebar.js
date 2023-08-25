@@ -14,7 +14,6 @@ const SideBar = () => {
       <div className="side_bar__wrapper">
         <div className="logo_name">
           <img src={Logo} alt="" />
-          {/* <h1>Mchango_</h1> */}
         </div>
         <ul>
           <li>
@@ -49,12 +48,12 @@ const SideBar = () => {
           </li>
         </ul>
       </div>
-      <div className="log_out">
+      {/* <div className="log_out">
         <NavLink to="/">
           <img src={Logout} alt="" />
           <span>Logout</span>
         </NavLink>
-      </div>
+      </div> */}
     </div>
   );
 };
