@@ -15,6 +15,7 @@ import Notification from "./pages/notification/notification";
 import SuccessAdmin from "./components/popupAdmin/successAdmin";
 import FailedAdmin from "./components/popupAdmin/failedAdmin";
 import Upgrade from "./pages/upgrade/upgrade";
+import GroupInfo from "./pages/chats/groupInfo/OverPayChat";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route path="/connect-wallet" element={<ConnectWallet />} />
         <Route path="/failed-add" element={<FailedAdmin />} />
         <Route path="/group" element={<Group />} />
+        <Route path="/group-info" element={<GroupInfo />} />
         <Route path="/success" element={<Success />} />
         <Route path="/create-group" element={<CreateGroup />} />
         <Route path="/home" element={<Home />} />

@@ -7,6 +7,8 @@ import "./balance.css";
 // import Arrowup from "../../assets/🦆 icon _diagonal arrow right up outline_.png";
 // import Arrowdown from "../../assets/🦆 icon _diagonal arrow left down_.png";
 import Line from "../../assets/Line 8.png";
+import { balanceData } from "../../helpers/mockedData";
+// import balanceData from "../../helpers/mockedData";
 const Balance = () => {
   return (
     <div className="balance">
@@ -14,16 +16,16 @@ const Balance = () => {
         <div className="balance_main">
           <div className="balance_output">
             <p>Balance</p>
-            <p>$ 68,789.44</p>
+            <p>{balanceData.balance}</p>
           </div>
           <div className="rate">
-            <span>4.8%</span>
+            <span>{balanceData.rate}</span>
           </div>
         </div>
         <div className="income_expense">
           <div className="income">
             <p>Income</p>
-            <p>$ 21.548,44</p>
+            <p>{balanceData.income}</p>
             <div>
               {/* <img className="arrow" src={Arrowup} alt="" /> */}
               {/* <FontAwesomeIcon icon={faArrowTrendUp} /> */}
@@ -34,7 +36,7 @@ const Balance = () => {
           </div>
           <div className="expense">
             <p>Expenses</p>
-            <p>$ 8.769,04</p>
+            <p>{balanceData.expense}</p>
             <div>
               {/* <img className="arrow" src={Arrowdown} alt="" /> */}
               {/* <FontAwesomeIcon icon={faArrowTrendDown} /> */}

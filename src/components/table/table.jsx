@@ -3,7 +3,9 @@ import "./table.css";
 import Grouppic from "../../assets/GroupPic.png";
 import Eth from "../../assets/Eth.png";
 import { useNavigate } from "react-router-dom";
-
+import { transactionTable } from "../../helpers/mockedData";
+import { NavLink } from "react-router-dom";
+// import { transactionTable } from "../../helpers/mockedData";
 const Table = () => {
   const navigation = useNavigate();
   const [showCreate, setShowCreate] = useState("Top");
@@ -48,138 +50,70 @@ const Table = () => {
           placeholder="Search"
         />
         {showCreate === "Top" ? (
-          <ul className="main-table">
-            <li>
-              <div>
-                <h1>Thrift name</h1>
-                <div className="name main ">
-                  <div className="name-pic">
-                    <img src={Grouppic} alt="" />
-                    <p>Adventure Fund</p>
-                  </div>
-                  <div className="name-pic">
-                    <img src={Grouppic} alt="" />
-                    <p>Adventure Fund</p>
-                  </div>
-                  <div className="name-pic">
-                    <img src={Grouppic} alt="" />
-                    <p>Adventure Fund</p>
-                  </div>
-                  <div className="name-pic">
-                    <img src={Grouppic} alt="" />
-                    <p>Adventure Fund</p>
-                  </div>
-                  <div className="name-pic">
-                    <img src={Grouppic} alt="" />
-                    <p>Adventure Fund</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h1>Revenue Generated</h1>
-                <div className="ether-table main">
-                  <div className="ether">
-                    <img src={Eth} alt="" />
-                    <p>
-                      13.6k ETH <span>(113.34%)</span>
-                    </p>
-                  </div>
-                  <div className="ether">
-                    <img src={Eth} alt="" />
-                    <p>
-                      13.6k ETH <span>(113.34%)</span>
-                    </p>
-                  </div>
-                  <div className="ether">
-                    <img src={Eth} alt="" />
-                    <p>
-                      13.6k ETH <span>(113.34%)</span>
-                    </p>
-                  </div>
-                  <div className="ether">
-                    <img src={Eth} alt="" />
-                    <p>
-                      13.6k ETH <span>(113.34%)</span>
-                    </p>
-                  </div>
-                  <div className="ether">
-                    <img src={Eth} alt="" />
-                    <p>
-                      13.6k ETH <span>(113.34%)</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h1>Next Contribution Day</h1>
-                <div className="date-main main">
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h1>No of Members</h1>
-                <div className="number-main main">
-                  <div className="number">
-                    <p>350</p>
-                  </div>
-                  <div className="number">
-                    <p>350</p>
-                  </div>
-                  <div className="number">
-                    <p>350</p>
-                  </div>
-                  <div className="number">
-                    <p>350</p>
-                  </div>
-                  <div className="number">
-                    <p>350</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h1>Date Created</h1>
-                <div className="last-date-main main">
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                  <div className="date">
-                    <p>31st August, 2023.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <div>
+            {transactionTable.map((item, index) => {
+              return (
+                <ul className="main-table">
+                  <li>
+                    <div>
+                      <h1>Thrift name</h1>
+                      <div className="name main ">
+                        <div className="name-pic">
+                          <img src={Grouppic} alt="" />
+                          <NavLink to="/group-info">
+                            <p>{item.paragraph}</p>
+                          </NavLink>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>Revenue Generated</h1>
+                      <div className="ether-table main">
+                        <div className="ether">
+                          <img src={Eth} alt="" />
+                          <p>
+                            {item.eth} <span>{item.span}</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>Next Contribution Day</h1>
+                      <div className="date-main main">
+                        <div className="date">
+                          <p>{item.date1}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>No of Members</h1>
+                      <div className="number-main main">
+                        <div className="number">
+                          <p>{item.number}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <h1>Date Created</h1>
+                      <div className="last-date-main main">
+                        <div className="date">
+                          <p>{item.date2}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              );
+            })}
+          </div>
         ) : showCreate === "Active" ? (
           <div className="active-group">
             <div className="table2-cont">

@@ -101,7 +101,9 @@ const ChatHero = () => {
               <div className="add-details">
                 {modal && <Addmembers />}
                 <img onClick={toggleModal} src={Addmembers} alt="" />
-                <span>Group details</span>
+                <NavLink to="/group-details">
+                  <span>Group details</span>
+                </NavLink>
               </div>
             </div>
             <div className="header-date">
@@ -196,7 +198,7 @@ const ChatHero = () => {
               <label for="add">Enter user’s wallet address</label>
               <input type="text" name="add" placeholder="Add member address" />
             </div>
-            <NavLink>Return home</NavLink>
+            <NavLink onClick={toggleModal}>Return home</NavLink>
           </div>
         </div>
       </div>
