@@ -1,5 +1,5 @@
 
-export const balanceData = {
+export const Data = {
   balance: "$68,789.44",
   rate: "4.8%",
   income: "$21.548,44",
