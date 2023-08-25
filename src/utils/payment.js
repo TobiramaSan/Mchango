@@ -17,7 +17,7 @@ const subscribePremium = async (amount) => {
 
     await transaction.wait();
 
-    return 'Thanks for your donation';
+    return 'payment successful';
   } catch (error) {
     console.error(error, 'This transaction failed');
     return 'This transaction failed';
@@ -39,7 +39,7 @@ const subscribeExclusive = async (amount) => {
 
     await transaction.wait();
 
-    return 'Thanks for your donation';
+    return 'Payment successful';
   } catch (error) {
     console.error(error, 'This transaction failed');
     return 'This transaction failed';
