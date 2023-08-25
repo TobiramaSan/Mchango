@@ -10,8 +10,8 @@ const Landing = () => {
   const navigate = useNavigate();
   const [isConnected, setIsConnected] = useState(false);
   const { account, setAccount } = useAccount(); // Use the custom hook to access account
-  const userAdd = account[0];
-  console.log(userAdd);
+  // const userAdd = account[0];
+  // console.log(userAdd);
   const connectWallet = async (event) => {
     event.preventDefault();
 
@@ -24,7 +24,9 @@ const Landing = () => {
         });
 
         if (accounts.length > 0) {
-          setAccount(accounts[0]);
+          const test = JSON.stringify(accounts[0]);
+          window.localStorage.setItem("accounts", test);
+          // setAccount(accounts[0]);
           setIsConnected(true);
           console.log(`Selected Account: ${accounts[0]}`);
           navigate("/home"); // Navigate to '/home' after successfully connecting the wallet
@@ -78,7 +80,7 @@ const Landing = () => {
             <li className="sign_up__btn">
               <a href="/signup">Sign Up</a>
             </li>
-            <li className="contact__btn" style={{ backgroundColor: "#7615ba" }}>
+            <li className="contact__btn">
               <button onClick={connectWallet}>
                 {isConnected ? (
                   <>
