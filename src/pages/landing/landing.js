@@ -4,11 +4,12 @@ import "./landing.css";
 import arrow from "../../assets/arrow_right_alt.png";
 import logo from "../../assets/mchango logo 1.png";
 import { useNavigate } from "react-router-dom";
+import { useAccount } from "../../AccountContext"; // Import the custom hook
 
 const Landing = () => {
   const navigate = useNavigate();
   const [isConnected, setIsConnected] = useState(false);
-  const [account, setAccount] = useState("");
+  const { account, setAccount } = useAccount(); // Use the custom hook to access account
 
   const connectWallet = async (event) => {
     event.preventDefault();
@@ -25,7 +26,6 @@ const Landing = () => {
           setAccount(accounts[0]);
           setIsConnected(true);
           console.log(`Selected Account: ${accounts[0]}`);
-          // console.log(`Selected Account:${accounts[0].balance}`);
           navigate("/home"); // Navigate to '/home' after successfully connecting the wallet
         }
       }
