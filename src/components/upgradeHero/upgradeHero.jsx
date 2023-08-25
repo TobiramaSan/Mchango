@@ -34,17 +34,16 @@ const UpgradeHero = () => {
           </div>
           <div className="upgrade-text">
             <div className="upgrade-text-title">
-              <h1>Basic Plan</h1>
+              <h1>Premium Plan</h1>
               <p>
-                The Basic Plan is ideal for users new to collective savings.
-                Start your journey towards financial goals with group savings
-                power.
+                Elevate savings with the Premium Plan's advanced features and
+                exclusive benefits, designed for accelerated financial success.
               </p>
             </div>
             <div className="upgrade-price">
-              <p>Commission Fee: 3%</p>
-              <p>No of subscriibers: 10 max</p>
-              <p>Subscription Payment: 0 ETH</p>
+              <p>Commission Fee: 1.5%</p>
+              <p>No of subscriibers: 30 max</p>
+              <p>Subscription Payment: 0.05 ETH</p>
             </div>
           </div>
         </div>
@@ -54,17 +53,17 @@ const UpgradeHero = () => {
           </div>
           <div className="upgrade-text">
             <div className="upgrade-text-title">
-              <h1>Basic Plan</h1>
+              <h1>Exclusive Plan</h1>
               <p>
-                The Basic Plan is ideal for users new to collective savings.
-                Start your journey towards financial goals with group savings
-                power.
+                Start with the Basic Plan for an entry into collective savings.
+                Begin your journey to financial goals and benefit from group
+                savings power.
               </p>
             </div>
             <div className="upgrade-price">
-              <p>Commission Fee: 3%</p>
-              <p>No of subscriibers: 10 max</p>
-              <p>Subscription Payment: 0 ETH</p>
+              <p>Commission Fee: 1%</p>
+              <p>No of subscriibers: 50 max</p>
+              <p>Subscription Payment: 0.1 ETH</p>
             </div>
           </div>
         </div>

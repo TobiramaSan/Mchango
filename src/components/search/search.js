@@ -1,5 +1,5 @@
 import React from "react";
-import Notify from "../../assets/Notification.png";
+import Notify from "../../assets/Combined-Shape.png";
 import Star from "../../assets/Star 15.png";
 import "./search.css";
 import { useNavigate } from "react-router-dom";

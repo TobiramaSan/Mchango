@@ -22,7 +22,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 185px;
 }
+.logo_name img {
+  width: 100%;
+}
+
 .logo_name h1 {
   color: var(--gray-shades-light-gray-2, #efefef);
   font-size: 16px;
