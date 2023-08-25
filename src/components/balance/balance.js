@@ -6,7 +6,7 @@ import "./balance.css";
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 // import Arrowup from "../../assets/🦆 icon _diagonal arrow right up outline_.png";
 // import Arrowdown from "../../assets/🦆 icon _diagonal arrow left down_.png";
-import Line from "../../assets/Line 8.png";
+// import Line from "../../assets/Line 8.png";
 import { balanceData } from "../../helpers/mockedData";
 // import balanceData from "../../helpers/mockedData";
 const Balance = () => {
@@ -31,9 +31,7 @@ const Balance = () => {
               {/* <FontAwesomeIcon icon={faArrowTrendUp} /> */}
             </div>
           </div>
-          <div className="line">
-            <img src={Line} alt="" />
-          </div>
+          <div className="line">{/* <img src={Line} alt="" /> */}</div>
           <div className="expense">
             <p>Expenses</p>
             <p>{balanceData.expense}</p>

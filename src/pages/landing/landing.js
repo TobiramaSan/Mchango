@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { checkAndAddSepoliaNetwork } from '../../utils/AddSepolia';
-import './landing.css';
-import arrow from '../../assets/arrow_right_alt.png';
-import logo from '../../assets/mchango logo 1.png';
+import React, { useState, useEffect } from "react";
+import { checkAndAddSepoliaNetwork } from "../../utils/AddSepolia";
+import "./landing.css";
+import arrow from "../../assets/arrow_right_alt.png";
+import logo from "../../assets/mchango logo 1.png";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
   const [isConnected, setIsConnected] = useState(false);
-  const [account, setAccount] = useState('');
+  const [account, setAccount] = useState("");
 
   const connectWallet = async (event) => {
     event.preventDefault();
@@ -16,25 +18,27 @@ const Landing = () => {
         disconnectWallet();
       } else {
         const accounts = await window.ethereum.request({
-          method: 'eth_requestAccounts',
+          method: "eth_requestAccounts",
         });
 
         if (accounts.length > 0) {
           setAccount(accounts[0]);
           setIsConnected(true);
           console.log(`Selected Account: ${accounts[0]}`);
+          // console.log(`Selected Account:${accounts[0].balance}`);
+          navigate("/home"); // Navigate to '/home' after successfully connecting the wallet
         }
       }
     } catch (error) {
       setIsConnected(false);
-      setAccount('');
+      setAccount("");
       console.log(`Error: ${error.message}`);
     }
   };
 
   const disconnectWallet = () => {
     setIsConnected(false);
-    setAccount('');
+    setAccount("");
   };
 
   useEffect(() => {
@@ -43,7 +47,7 @@ const Landing = () => {
 
   useEffect(() => {
     if (!isConnected) {
-      console.log('Wallet disconnected');
+      console.log("Wallet disconnected");
     }
   }, [isConnected]);
 
@@ -73,7 +77,7 @@ const Landing = () => {
             <li className="sign_up__btn">
               <a href="/signup">Sign Up</a>
             </li>
-            <li className="contact__btn" style={{ backgroundColor: '#7615ba' }}>
+            <li className="contact__btn" style={{ backgroundColor: "#7615ba" }}>
               <button onClick={connectWallet}>
                 {isConnected ? (
                   <>
@@ -81,9 +85,10 @@ const Landing = () => {
                     {account.substring(account.length - 6)}
                   </>
                 ) : (
-                  'Connect Wallet'
+                  "Connect Wallet"
                 )}
               </button>
+
               <img src={arrow} alt="" />
             </li>
           </ul>
