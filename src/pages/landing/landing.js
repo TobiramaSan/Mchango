@@ -25,6 +25,7 @@ const Landing = () => {
           setAccount(accounts[0]);
           setIsConnected(true);
           console.log(`Selected Account: ${accounts[0]}`);
+          const userAddress= accounts[0]
           // console.log(`Selected Account:${accounts[0].balance}`);
           navigate("/home"); // Navigate to '/home' after successfully connecting the wallet
         }
