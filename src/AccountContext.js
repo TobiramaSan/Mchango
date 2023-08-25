@@ -1,17 +1,17 @@
-import React, { createContext, useState, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const AccountContext = createContext();
 
-export function AccountProvider({ children }) {
-  const [account, setAccount] = useState("");
+export const AccountProvider = ({ children }) => {
+  const [userAdd, setUserAdd] = useState(""); // Initialize userAdd state
 
   return (
-    <AccountContext.Provider value={{ account, setAccount }}>
+    <AccountContext.Provider value={{ userAdd, setUserAdd }}>
       {children}
     </AccountContext.Provider>
   );
-}
+};
 
-export function useAccount() {
+export const useAccount = () => {
   return useContext(AccountContext);
-}
+};
