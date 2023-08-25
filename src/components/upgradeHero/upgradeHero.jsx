@@ -1,10 +1,36 @@
-import React from "react";
-import "./upgradeHero.css";
-import Basic from "../../assets/Basic.png";
-import Premium from "../../assets/Premium.png";
-import Exclusive from "../../assets/Exclusive.png";
-
+import React, { useState } from 'react';
+import './upgradeHero.css';
+import Basic from '../../assets/Basic.png';
+import Premium from '../../assets/Premium.png';
+import Exclusive from '../../assets/Exclusive.png';
+import { subscribeExclusive, subscribePremium } from '../../utils/payment';
 const UpgradeHero = () => {
+  const [feedBackMessage, setFeedBackMessage] = useState('');
+
+  const handlePremium = async () => {
+    try {
+      const amount = prompt('Enter the subscription amount in Ether:'); //
+      if (!amount) return;
+      const feedback = await subscribePremium(amount);
+      setFeedBackMessage(feedback);
+      console.log(feedback);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleExclusive = async () => {
+    try {
+      const amount = prompt('Enter the subscription amount in Ether:'); //
+      if (!amount) return;
+      const feedback = await subscribeExclusive(amount);
+      setFeedBackMessage(feedback);
+      console.log(feedback);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="upgrade-hero">
       <div className="upgrade-hero-cont">
